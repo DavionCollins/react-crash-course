@@ -6,13 +6,18 @@ import Modal from './components/modal.jsx'
 function App() {
   return (
     <div>
-      <Title></Title>
+      <Title />
       <div className='todo__wrapper'>
-      <Todo></Todo>
-      <Todo></Todo>
-      <Todo></Todo>
+      <Todo title="Finish Frontend Simplified"
+      paragraph="Code along with frontend Simplified step by step"/>
+
+      <Todo title="Finish the interview Section"
+      paragraph="Finish every interview question in the next 6 weeks"/>
+
+      <Todo title="Land a 100k Job"
+      paragraph="Apply to 100 jobs"/>
       </div>
-      <Modal />
+      <Modal title="Hello"/>
     </div>
   );
 }
