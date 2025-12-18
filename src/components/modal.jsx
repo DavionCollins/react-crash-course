@@ -1,15 +1,17 @@
 import './modal.css'
 
 
-function Modal({title}) {
+function Modal({title, modalCancel, modalConfirm}) {
+
+  
 
 return (
 <div>
   <div className="modal">
     <p className="modal__title">{title}</p>
     <div className="modal__buttons">
-      <button className="btn btn__cancel">Cancel</button>
-      <button className="btn">Confirm</button>
+      <button className="btn btn__cancel" onClick={modalCancel}>Cancel</button>
+      <button className="btn" onClick={modalConfirm}>Confirm</button>
     </div>
   </div>
   <div className="backdrop" />
